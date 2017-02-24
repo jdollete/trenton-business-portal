@@ -33,6 +33,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem "camaleon_cms",  '>=2.3.7.1' # Stable versions 2.3.6, 2.2.1, 2.1.1, 2.1.0
+# gem "camaleon_cms", github: 'owen2345/camaleon-cms' # current development version
+
+gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
+gem 'draper', github: 'audionerd/draper', branch: 'rails5'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -52,3 +58,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+#################### Camaleon CMS include all gems for plugins and themes #################### 
+require './lib/plugin_routes' 
+instance_eval(PluginRoutes.draw_gems)

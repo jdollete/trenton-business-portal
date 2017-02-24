@@ -1,0 +1,14 @@
+{
+  "name" : "Hub Theme",
+  "description" : "",
+  "thumb" : "images/image.png",
+  "helpers": [
+    "Themes::HubTheme::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["hub_theme_on_install_theme"],
+    "on_inactive": ["hub_theme_on_uninstall_theme"],
+    "on_theme_settings": ["hub_theme_settings"]
+    //here all your hooks
+  }
+}
