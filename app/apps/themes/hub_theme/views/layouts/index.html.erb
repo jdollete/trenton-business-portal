@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- META SECTION -->
-    <title><%= current_site.the_title %></title>
+    <title>Trenton Business Hub</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,57 +13,56 @@
     <%= raw the_head %>
 </head>
 <body>
+  <div class="wrap">
+  	<div class="header">
+      	<div class="navbar-brand"><a href="index.html">Trenton Business Hub</a></div>
+          <div class="nav">
+              <ul>
+                <li><a href="#">Start Your Business</a></li>
+                <li><a href="#">Be A Creator</a></li>
+                <li><a href="#">Manage Your Business</a></li>
+                <li><a href="#">Grow Your Business</a></li>
+                <li><a href="#">Research &amp; Reports</a></li>
+                <li><a href="#">Explore Trenton</a></li>
+              </ul>
+          </div>
+          <div class="clear"></div>
+      </div>
+      <div class="content">
+      	<h1>Heading</h1>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassingLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.you need to be sure there isn't anything embarrassingLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet.</p>
+          <div class="pic"><a href="about.html"><img src="http://lorempixel.com/260/350/food/1" ></a></div>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassingLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.you need to be sure there isn't anything embarrassingLorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet.</p>
+          <div class="pic"><a href="about.html"><img src="http://lorempixel.com/260/350/food/3" ></a></div>
 
-    <!-- container -->
-    <div class="container">
-        <!-- header -->
-        <div class="navbar navbar-primary">
-            <div class="navbar-header">
-                <a id="logo" class="navbar-brand" href="<%= current_site.the_url %>"><%= image_tag current_site.the_logo, class: "img-responsive" %></a>
-                <button data-target="#navbar-main" data-toggle="collapse" type="button" class="navbar-toggle">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar-main" class="navbar-collapse collapse">
-                <%= raw get_nav_menu('main_menu', 'nav navbar-nav ') %>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <% if signin?  %>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="<%= cama_current_user.decorate.the_avatar %>" style="max-width: 24px; border-radius: 50%" alt=""/> <%= cama_current_user.username %></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<%= cama_admin_dashboard_path %>">Dashboard</a></li>
-                                <li><a href="<%= cama_admin_profile_path %>">Profile</a></li>
-                                <li><a href="<%= cama_admin_logout_path %>">Logout</a></li>
-                            </ul>
-                        </li>
-                    <% else %>
-                        <li class="dropdown">
-                            <a id="login-user" class="dropdown-toggle" data-toggle="dropdown" href="#">Login / Register</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<%= cama_admin_login_path %>">Login</a></li>
-                                <li><a href="<%= cama_admin_register_path %>">Register</a></li>
-                            </ul>
-                        </li>
-                    <% end %>
-                </ul>
-                <%= raw current_site.draw_languages("language list-inline pull-right", true) %>
-            </div>
-        </div>
-        <!-- ./header -->
-
-        <div class="content">
-            <%= yield %>
-        </div>
-
-        <!-- footer -->
-        <footer>
-
-        </footer>
-        <!-- ./footer -->
-    </div>
-    <!-- ./container -->
+      </div>
+      <div class="sidebar">
+      	<h2>Newsletters</h2>
+          <ul>
+            <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+            <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+            <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+            <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+            <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+            <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+            <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+          </ul>
+      </div>
+      <div class="clear"></div>
+  </div>
+  <div class="footer">
+      <div class="wrap">
+          <div class="fmenu">
+              <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Works </a></li>
+                <li><a href="contact.html">Catch me</a></li>
+              </ul>
+      </div>
+          <div class="copy">Design by <a href="http://w3layouts.com">W3Layouts</a></div>
+          <div class="clear"></div>
+      </div>
+  </div>
 </body>
 </html>
