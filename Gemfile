@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem "camaleon_cms",  '>=2.3.7.1' # Stable versions 2.3.6, 2.2.1, 2.1.1, 2.1.0
 # gem "camaleon_cms", github: 'owen2345/camaleon-cms' # current development version
+gem "camaleon_post_order", github: 'owen2345/camaleon-post-order-plugin'
 
 gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
 gem 'draper', github: 'audionerd/draper', branch: 'rails5'
@@ -60,6 +61,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
-#################### Camaleon CMS include all gems for plugins and themes #################### 
-require './lib/plugin_routes' 
+#################### Camaleon CMS include all gems for plugins and themes ####################
+require './lib/plugin_routes'
 instance_eval(PluginRoutes.draw_gems)

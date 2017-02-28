@@ -10,6 +10,13 @@ GIT
       request_store (~> 1.0)
 
 GIT
+  remote: https://github.com/owen2345/camaleon-post-order-plugin.git
+  revision: 3c665b27166084be6b99142cde837d0195080e60
+  specs:
+    camaleon_post_order (0.0.2)
+      rails
+
+GIT
   remote: https://github.com/rails/activemodel-serializers-xml
   revision: dd9c0acf26aab111ebc647cd8deb99ebc6946531
   specs:
@@ -242,6 +249,7 @@ DEPENDENCIES
   activemodel-serializers-xml!
   byebug
   camaleon_cms (>= 2.3.7.1)
+  camaleon_post_order!
   draper!
   faker
   jbuilder (~> 2.5)
