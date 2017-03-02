@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem "camaleon_cms",  '>=2.3.7.1' # Stable versions 2.3.6, 2.2.1, 2.1.1, 2.1.0
 # gem "camaleon_cms", github: 'owen2345/camaleon-cms' # current development version
 gem "camaleon_post_order", github: 'owen2345/camaleon-post-order-plugin'
+gem 'camaleon_post_created_at', github: 'owen2345/camaleon_post_created_at'
 
 gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
 gem 'draper', github: 'audionerd/draper', branch: 'rails5'
