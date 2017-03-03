@@ -17,6 +17,14 @@ GIT
       rails
 
 GIT
+  remote: https://github.com/owen2345/camaleon_post_created_at.git
+  revision: eaa23d342e10f3d97a41852a4755f19311cc34e5
+  specs:
+    camaleon_post_created_at (0.0.1)
+      camaleon_cms (>= 2.3.5)
+      rails
+
+GIT
   remote: https://github.com/rails/activemodel-serializers-xml
   revision: dd9c0acf26aab111ebc647cd8deb99ebc6946531
   specs:
@@ -249,6 +257,7 @@ DEPENDENCIES
   activemodel-serializers-xml!
   byebug
   camaleon_cms (>= 2.3.7.1)
+  camaleon_post_created_at!
   camaleon_post_order!
   draper!
   faker
