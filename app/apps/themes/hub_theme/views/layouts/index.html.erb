@@ -13,13 +13,7 @@
     <%= raw the_head %>
 </head>
 <body>
-  <div class="wrap">
-  	<div class="header">
-    	<%= render "partials/nav" %>
-      <%= render "partials/card_section" %>
-      <%= render "partials/newsclipping" %>
-      <div class="clear"></div>
-    </div>
-  <%= render "partials/footer" %>
+  <%= raw get_nav_menu('main_menu', 'nav navbar-nav nav-menu') %>
+  <%= yield %>
 </body>
 </html>
