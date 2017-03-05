@@ -1,15 +1,18 @@
 <div class="sidebar">
   <h2>Newsletters</h2>
     <ul>
-      <li><%= @posts.each do |post| %>
+      <% (current_site.the_post_type("newsclippings").the_posts.decorate rescue {}).each_with_index do |clipping, index| %>
+        <li><div><a rel="bookmark" href="<%= clipping.the_field("new-clipping-link") %>"><%= clipping.the_title %></a></div>
+            <div><%= clipping.the_field("news-clipping-date") %></div>
+            <div><%= clipping.the_field("news-clipping-source") %></div>
+        </li>
+      <% end %>
 
-        <% end %>
-      </li>
+      <!-- <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
       <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
       <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
       <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
       <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
-      <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
-      <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li>
+      <li><a href="#">Lorem ipsum dolor sit consectetur adip</a></li> -->
     </ul>
 </div>
