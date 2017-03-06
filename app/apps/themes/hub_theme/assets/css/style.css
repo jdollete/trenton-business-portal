@@ -117,6 +117,9 @@ body{
 .sidebar li a:hover{
 	color:#eee;
 }
+.sidebar li div:not(:first-child){
+	color:#777;
+}
 /**--footer--*/
 .footer{
 	margin-top:100px;
