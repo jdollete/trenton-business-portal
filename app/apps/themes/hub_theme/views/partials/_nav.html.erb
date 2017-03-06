@@ -1,13 +1,18 @@
 <div class="navbar-brand"><a href="index.html">Trenton Business Hub</a></div>
   <div class="nav">
-      <ul>
+    <ul>
+      <% (current_site.the_post_type("navbar-links").the_posts.decorate rescue {}).each do |link| %>
+        <li><a href="<%= link.the_field("link-to-page") %>"><%= link.the_title %></a></li>
+      <% end %>
+    </ul>
+      <!-- <ul>
         <li><a href="#">Start Your Business</a></li>
         <li><a href="#">Be A Creator</a></li>
         <li><a href="#">Manage Your Business</a></li>
         <li><a href="#">Grow Your Business</a></li>
         <li><a href="#">Research &amp; Reports</a></li>
         <li><a href="#">Explore Trenton</a></li>
-      </ul>
+      </ul> -->
   </div>
   <div class="clear"></div>
 </div>
