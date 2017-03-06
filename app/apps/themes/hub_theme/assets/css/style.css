@@ -31,7 +31,8 @@ img{max-width:100%;}
 /*end reset*/
 body{
 	font-family:Verdana, Arial, Helvetica, sans-serif;
-	background:url(../images/bg.png);
+	/*background:url(../images/bg.png);*/
+	background-color: #2F3040;
 }
 .wrap{
 	width:1024px;
