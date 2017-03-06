@@ -110,15 +110,6 @@ body{
 	padding-bottom:12px;
 	position:relative;
 }
-/*.sidebar li:after{
-	background:rgba(255,255,255,.1);
-	position:absolute;
-	height:15px;
-	width:15px;
-	top:10%;
-	right:0;
-	content:"";
-}*/
 .sidebar li a{
 	padding-right:30px;
 	color:#777;
