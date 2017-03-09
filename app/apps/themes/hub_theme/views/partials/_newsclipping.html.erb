@@ -1,4 +1,3 @@
-<div class="sidebar">
   <h2>Newsletters</h2>
     <ul>
       <% (current_site.the_post_type("newsclippings").the_posts.decorate rescue {}).each_with_index do |clipping, index| %>
@@ -8,4 +7,3 @@
         </li>
       <% end %>
     </ul>
-</div>
