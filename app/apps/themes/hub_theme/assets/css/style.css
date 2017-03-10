@@ -207,6 +207,7 @@ form textarea{
   display: flex;
   flex-wrap: wrap;
   flex-direction: flex-start;
+	padding-top: 20px;
 }
 .event-card {
   display: flex;
