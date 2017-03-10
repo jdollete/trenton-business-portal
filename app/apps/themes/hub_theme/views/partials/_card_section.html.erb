@@ -5,31 +5,13 @@
 <div class="">
 <main>
   <ul class="flexbox event-card-list">
-    <li>
-      <article style="border-style: solid; border-width: 1px;" class="event-card">
-        <h1 class="flex-fill blue">event</h1>
-      </article>
-    </li>
-    <li>
-      <article style="border-style: solid; border-width: 1px;" class="event-card">
-        <h1 class="flex-fill blue">event</h1>
-      </article>
-    </li>
-    <li>
-      <article style="border-style: solid; border-width: 1px;" class="event-card">
-        <h1 class="flex-fill blue">event</h1>
-      </article>
-    </li>
-    <li>
-      <article style="border-style: solid; border-width: 1px;" class="event-card">
-        <h1 class="flex-fill blue">event</h1>
-      </article>
-    </li>
-    <li>
-      <article style="border-style: solid; border-width: 1px;" class="event-card">
-        <h1 class="flex-fill blue">event</h1>
-      </article>
-    </li>
+    <% (current_site.the_post_type("event-card").the_posts.decorate rescue {}).each_with_index do |card, index| %>
+      <li>
+        <article style="border-style: solid; border-width: 1px;" class="event-card">
+          <h1 class="flex-fill blue">event</h1>
+        </article>
+      </li>
+    <% end %>
   </ul>
 </main>
 </div>
