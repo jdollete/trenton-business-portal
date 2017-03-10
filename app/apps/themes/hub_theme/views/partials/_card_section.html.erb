@@ -9,12 +9,17 @@
         <li class="">
           <article style="border-style: solid; border-width: 1px;" class="event-card">
             <div class="">
+              <img src="https://s-media-cache-ak0.pinimg.com/originals/17/4d/14/174d14d35529cd0d5639d13eacc8ef72.jpg" alt="">
+            </div>
+            <div class="">
+              <i class="fa fa-calendar"></i> <%= card.created_at.strftime("%B %d, %Y") %>
+            </div>
+            <div class="">
               <%= card.the_title %>
             </div>
             <div class="event-card-content-preview">
-              <%= card.the_content %>
+              <%= card.content_filtered %>
             </div>
-            <!-- <h1 class="flex-fill blue">event</h1> -->
           </article>
         </li>
       <% end %>
