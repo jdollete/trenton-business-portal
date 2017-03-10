@@ -226,3 +226,9 @@ form textarea{
   padding: 1em;
 	color: white;
 }
+.event-card-content-preview {
+	width: 150px;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+}
