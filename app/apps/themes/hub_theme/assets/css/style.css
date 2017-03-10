@@ -208,7 +208,6 @@ form textarea{
   flex-wrap: wrap;
   flex-direction: flex-start;
 }
-
 .event-card {
   display: flex;
   flex-direction: column;
@@ -216,15 +215,6 @@ form textarea{
   padding: .5em;
   color: #2d425c;
 }
-
-  .event-card h1 {
-    font-size: 1.5em;
-  }
-
-  .event-card p {
-    margin: 0 0 .5em 0;
-  }
-
 .event-card-data {
   display: flex;
   flex: 1 0 auto;

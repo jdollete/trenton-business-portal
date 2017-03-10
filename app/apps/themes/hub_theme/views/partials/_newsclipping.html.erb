@@ -1,9 +1,14 @@
+<div>
   <h2>Newsletters</h2>
-    <ul>
-      <% (current_site.the_post_type("newsclippings").the_posts.decorate rescue {}).each_with_index do |clipping, index| %>
-        <li><div><a target="_blank" href="<%= clipping.the_field("news-clipping-link") %>"><%= clipping.the_title %></a></div>
-            <div><%= clipping.the_field("news-clipping-date") %></div>
-            <div><%= clipping.the_field("news-clipping-source") %></div>
-        </li>
-      <% end %>
-    </ul>
+</div>
+
+<div class="">
+  <ul>
+    <% (current_site.the_post_type("newsclippings").the_posts.decorate rescue {}).each_with_index do |clipping, index| %>
+      <li><div><a target="_blank" href="<%= clipping.the_field("news-clipping-link") %>"><%= clipping.the_title %></a></div>
+          <div><%= clipping.the_field("news-clipping-date") %></div>
+          <div><%= clipping.the_field("news-clipping-source") %></div>
+      </li>
+    <% end %>
+  </ul>
+</div>
