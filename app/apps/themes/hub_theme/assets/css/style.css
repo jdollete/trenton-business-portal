@@ -196,10 +196,16 @@ form textarea{
 }
 
 /*CSS for the event cards*/
+main ul li {
+	padding: 10px;
+}
+article div:nth-child(2) {
+	padding-bottom: 10px;
+}
 .event-card-section {
 	float: left;
 	width: 500px;
-  width: 60%;
+  width: 70%;
   padding: .5em;
   color: #2d425c;
 }
@@ -212,8 +218,9 @@ form textarea{
 .event-card {
   display: flex;
   flex-direction: column;
-  width: 33.33%;
-  padding: .5em;
+  width: 300px;
+	height: 300px;
+  padding: 20px;
   color: #2d425c;
 }
 .event-card-data {
@@ -225,4 +232,10 @@ form textarea{
   align-items: center;
   padding: 1em;
 	color: white;
+}
+.event-card-content-preview {
+	width: 200px;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
 }
