@@ -239,3 +239,10 @@ article div:nth-child(2) {
  	overflow: hidden;
  	text-overflow: ellipsis;
 }
+
+/*Page Article Section*/
+.article-created-at {
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}

@@ -1,0 +1,12 @@
+<div class="content">
+  <h1><%= @post.the_title %></h1>
+</div>
+<div class="article-created-at">
+  <i class="fa fa-calendar"></i> <%= @post.created_at.strftime("%B %d, %Y") %>
+</div>
+<% if @post.has_thumb? %>
+  <% @post.the_thumb %>
+<% end %>
+<div class="">
+  <%= @post.the_excerpt %>
+</div>
