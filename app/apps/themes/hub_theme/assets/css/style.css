@@ -239,10 +239,17 @@ article div:nth-child(2) {
  	overflow: hidden;
  	text-overflow: ellipsis;
 }
+.event-card-thumb{
+	margin-bottom: 10px;
+}
 
 /*Page Article Section*/
 .article-created-at {
 	margin-top: 20px;
 	padding-top: 40px;
 	padding-bottom: 20px;
+}
+.article-thumb {
+	max-width: 680px;
+	margin-bottom: 20px;
 }
