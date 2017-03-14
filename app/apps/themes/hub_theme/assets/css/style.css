@@ -239,6 +239,9 @@ article div:nth-child(2) {
  	overflow: hidden;
  	text-overflow: ellipsis;
 }
+.event-card-thumb{
+	margin-bottom: 10px;
+}
 
 /*Page Article Section*/
 .article-created-at {
