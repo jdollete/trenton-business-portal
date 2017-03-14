@@ -8,17 +8,19 @@
       <% (current_site.the_post_type("event-card").the_posts.decorate rescue {}).each_with_index do |card, index| %>
         <li class="">
           <article style="border-style: solid; border-width: 1px;" class="event-card">
-            <div class="event-card-thumb">
-              <% if card.has_thumb? %>
-                <%= card.the_thumb %>
-              <% end %>
-            </div>
-            <div class="">
-              <i class="fa fa-calendar"></i> <%= card.created_at.strftime("%B %d, %Y") %>
-            </div>
-            <div class="">
-              <%= card.the_title %>
-            </div>
+            <a class="" href="<%= card.the_field("card-link") %>">
+              <div class="event-card-thumb">
+                <% if card.has_thumb? %>
+                  <%= card.the_thumb %>
+                <% end %>
+              </div>
+              <div class="">
+                <i class="fa fa-calendar"></i> <%= card.created_at.strftime("%B %d, %Y") %>
+              </div>
+              <div class="">
+                <%= card.the_title %>
+              </div>
+            </a>
             <!-- <div class="event-card-content-preview">
               <%= card.content_filtered %>
             </div> -->
