@@ -4,9 +4,11 @@
 <div class="article-created-at">
   <i class="fa fa-calendar"></i> <%= @post.created_at.strftime("%B %d, %Y") %>
 </div>
-<% if @post.has_thumb? %>
-  <% @post.the_thumb %>
-<% end %>
+<div class="article-thumb">
+  <% if @post.has_thumb? %>
+    <%= @post.the_thumb %>
+  <% end %>
+</div>
 <div class="">
   <%= @post.the_excerpt %>
 </div>

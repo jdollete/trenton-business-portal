@@ -246,3 +246,7 @@ article div:nth-child(2) {
 	padding-top: 40px;
 	padding-bottom: 20px;
 }
+.article-thumb {
+	max-width: 680px;
+	margin-bottom: 20px;
+}
