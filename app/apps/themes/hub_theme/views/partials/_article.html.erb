@@ -10,5 +10,8 @@
   <% end %>
 </div>
 <div class="">
-  <%= @post.the_excerpt %>
+  <%= raw @post.the_content %>
+  <% if @post.render_fields.present? %>
+    <%= raw @post.render_fields %>
+  <% end %>
 </div>
