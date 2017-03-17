@@ -11,4 +11,7 @@
 </div>
 <div class="">
   <%= raw @post.the_content %>
+  <% if @post.render_fields.present? %>
+    <%= raw @post.render_fields %>
+  <% end %>
 </div>

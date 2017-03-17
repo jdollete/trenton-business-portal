@@ -213,6 +213,7 @@ article a:hover {
   color: #2d425c;
 }
 .event-card-list {
+	list-style: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: flex-start;
