@@ -31,12 +31,15 @@ img{max-width:100%;}
 /*end reset*/
 body{
 	font-family:Verdana, Arial, Helvetica, sans-serif;
-	/*background:url(../images/bg.png);*/
-	background-color: #2F3040;
+	background-color: #2F2F2F;
 }
 .wrap{
 	width:1024px;
 	margin:0 auto;
+	background-color: #FAFCFE;
+	-moz-box-shadow: 0 0 10px #ccc;
+	-webkit-box-shadow: 0 0 10px #ccc;
+	box-shadow: 0 0 10px #ccc;
 }
 .header{
 	margin-bottom:100px;
@@ -104,6 +107,7 @@ body{
 }
 .sidebar ul{
 	padding:0;
+	list-style: none;
 }
 .sidebar li{
 	font-size:14px;
@@ -226,6 +230,7 @@ article a:hover {
 	height: 300px;
   padding: 20px;
   color: #2d425c;
+	background-color: #C1C1C1;
 }
 .event-card-data {
   display: flex;
