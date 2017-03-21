@@ -1,9 +1,22 @@
-<div class="navbar-brand"><a href="/">Trenton Business Hub</a></div>
-<div class="nav">
-  <ul>
-    <% (current_site.the_post_type("navbar-links").the_posts.decorate rescue {}).each do |link| %>
-      <li><a href="<%= link.the_field("link-to-page") %>"><%= link.the_title %></a></li>
-    <% end %>
-  </ul>
+<div class="navbar-header">
+    <div class="seal-logo">
+      <img src="https://trenton-business-hub.s3.amazonaws.com/Logos/official-seal-of-trenton.jpg" alt="Trenton Seal"/>
+      <div class="city-mayor">
+        <p class="">Mayor Eric E. Jackson</p>
+      </div>
+    </div>
+    <div class="city-title">
+      <p class=""><a href="/">Trenton Business Hub</a></p>
+    </div>
 </div>
+
+<nav class="horizontal">
+  <div class="nav">
+    <ul>
+      <% (current_site.the_post_type("navbar-links").the_posts.decorate rescue {}).each do |link| %>
+        <li><a href="<%= link.the_field("link-to-page") %>"><%= link.the_title %></a></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
 <div class="clear"></div>
