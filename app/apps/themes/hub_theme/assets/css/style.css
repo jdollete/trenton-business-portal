@@ -68,9 +68,12 @@ div.navbar-header img {
 	width: 150px;
 }
 .city-title {
-	font-family: 'Exo', sans-serif;
 	position: relative;
 	display: inline-block;
+
+}
+div.city-title a {
+	font-family: 'Exo', sans-serif;
 	font-size: 4em;
 	color: #003366;
 }
