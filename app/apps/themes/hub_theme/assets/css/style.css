@@ -289,8 +289,14 @@ article a:hover {
  	text-overflow: ellipsis;
 }
 .event-card-thumb{
+	background-color: #FAFCFE;
+	height: 150px;
 	margin-bottom: 10px;
 }
+/*div.event-card-thumb img {
+	display: block;
+	vertical-align: center;
+}*/
 
 /*Page Article Section*/
 .article-created-at {
