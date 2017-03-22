@@ -86,14 +86,21 @@ div.city-title a {
 	text-align: center;
 }
 
+nav div.nav {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #003366;
+}
 .nav li{
 	display:inline-block;
 	margin-left:8px;
 }
 .nav li a{
-	color:#aaa;
+	color: #E3C204;
 	padding:10px;
-	background:rgba(255,255,255,.1);
+	/*background:rgba(255,255,255,.1);*/
 }
 .nav li a:hover{
 	color:#eee;
