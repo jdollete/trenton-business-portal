@@ -259,6 +259,7 @@ article a:hover {
   padding: 20px;
   color: #2d425c;
 	background-color: #C1C1C1;
+	border-style: none !important;
 }
 .event-card-data {
   display: flex;
