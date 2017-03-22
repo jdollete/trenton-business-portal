@@ -12,6 +12,7 @@ blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 /* start editing from here */
+strong{font-weight: bold;}
 a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */
 .txt-lt{text-align:left;}/* text align left */
@@ -67,9 +68,12 @@ div.navbar-header img {
 	width: 150px;
 }
 .city-title {
-	font-family: 'Exo', sans-serif;
 	position: relative;
 	display: inline-block;
+
+}
+div.city-title a {
+	font-family: 'Exo', sans-serif;
 	font-size: 4em;
 	color: #003366;
 }
@@ -82,14 +86,21 @@ div.navbar-header img {
 	text-align: center;
 }
 
+nav div.nav {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #003366;
+}
 .nav li{
 	display:inline-block;
 	margin-left:8px;
 }
 .nav li a{
-	color:#aaa;
+	color: #E3C204;
 	padding:10px;
-	background:rgba(255,255,255,.1);
+	/*background:rgba(255,255,255,.1);*/
 }
 .nav li a:hover{
 	color:#eee;
@@ -241,7 +252,7 @@ article a:hover {
 	float: left;
 	width: 500px;
   width: 70%;
-  padding: .5em;
+  padding: 1em;
   color: #2d425c;
 }
 .event-card-list {
@@ -259,6 +270,7 @@ article a:hover {
   padding: 20px;
   color: #2d425c;
 	background-color: #C1C1C1;
+	border-style: none !important;
 }
 .event-card-data {
   display: flex;
@@ -277,8 +289,14 @@ article a:hover {
  	text-overflow: ellipsis;
 }
 .event-card-thumb{
+	background-color: #FAFCFE;
+	height: 150px;
 	margin-bottom: 10px;
 }
+/*div.event-card-thumb img {
+	display: block;
+	vertical-align: center;
+}*/
 
 /*Page Article Section*/
 .article-created-at {
@@ -290,6 +308,8 @@ article a:hover {
 	max-width: 680px;
 	margin-bottom: 20px;
 }
+
+/*Border test used to see sections while styling*/
 .border-test {
 	border: 1px black solid;
 }
