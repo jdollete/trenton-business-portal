@@ -272,6 +272,11 @@ article a:hover {
 	background-color: #C1C1C1;
 	border-style: none !important;
 }
+/*Centering the image does not work*/
+/*.event-card-thumb img {
+	display: block;
+	vertical-align: middle;
+}*/
 .event-card-data {
   display: flex;
   flex: 1 0 auto;
@@ -289,6 +294,8 @@ article a:hover {
  	text-overflow: ellipsis;
 }
 .event-card-thumb{
+	display: block;
+	margin: auto;
 	background-color: #FAFCFE;
 	height: 150px;
 	margin-bottom: 10px;
